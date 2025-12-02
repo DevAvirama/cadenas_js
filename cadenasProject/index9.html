@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+
+    <main>
+        <section>
+            <h2>Strings Repeat</h2>
+            <p>El método string.repeat() es una función de JavaScript que permite tomar una cadena de texto existente y crear una nueva cadena repitiendo el contenido tantas veces como se indique.
+               Este método no modifica la cadena original, sino que genera una nueva.
+               Es útil cuando necesitas duplicar palabras, crear patrones, generar líneas decorativas o producir texto repetitivo de forma automática, sin escribirlo varias veces manualmente.
+               Además, solo acepta números enteros y positivos; si intentas usar números negativos o no válidos, JavaScript mostrará un error.d</p>
+               
+               <h3>Sintaxis</h3>
+               <p>cadena.repeat(veces).</p>
+
+               <h3>EJEMPLO:</h3>
+               <button onclick="">Gnerar el codigo</button>
+               <p id="resultado"></p>
+        </section>
+    </main>
+
+    <aside></aside>
+    <footer></footer>
+
+    <script>
+        // Cadena que queremos repetir
+        let palabra = "Hola desde HTML! ";
+
+        // Repetimos la cadena 3 veces
+        let repetido = palabra.repeat(3);
+
+        // Mostramos el resultado en el elemento <p>
+        document.getElementById("resultado").textContent = repetido;
+    </script>
+
+
+</body>
+</html>

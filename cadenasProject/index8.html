@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>String padEnd</h1>
+    </header>
+    <nav></nav>
+
+    <main>
+        <section>
+            <h2>¿Que es?:</h2>
+
+            <p>Es un método de JavaScript que permite tomar una cadena y completarla por el lado derecho
+                con un texto de relleno hasta alcanzar una longitud total que tú decidas.
+                Si la cadena ya es igual o más larga que esa longitud, no la cambia.
+
+                Su función principal es formatear texto para que mantenga un ancho fijo al mostrarse, lo cual es útil
+                cuando haces tablas, listados, reportes o interfaces donde todo debe quedar alineadito.
+
+                Este método no modifica el string original (porque los strings son inmutables), sino que
+                devuelve una nueva cadena con el relleno aplicado.</p>
+
+            <h3>Sintaxis</h3>
+            <p>cadena.padEnd(longitud, relleno)</p>
+
+            <h3>Ejemplo:</h3>
+
+            <button onclick="">Generar el codigo</button>
+
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <script>
+        // Productos sin alinear
+        let productos = ["Pan", "Leche", "Huevos", "Mantequilla"];
+
+        // Texto final para mostrar
+        let textoFormateado = "";
+
+        // Alineamos cada producto para que todos midan 15 caracteres
+        productos.forEach(item => {
+            textoFormateado += item.padEnd(15, ".") + " $ precio\n";
+        });
+
+        // Lo mostramos en la etiqueta <pre>
+        document.getElementById("resultado").textContent = textoFormateado;
+    </script>
+
+
+    <aside></aside>
+    <footer></footer>
+</body>
+
+</html>
